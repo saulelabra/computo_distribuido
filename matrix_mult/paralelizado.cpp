@@ -13,7 +13,7 @@ public:
 	//char nom;
 	Vector(int nums)
 	{
-        //srand(time(NULL));
+        srand(time(NULL));
 		this->n=nums;
 		LlenarVector(time(NULL), 100);
 		Consiguemagnitud();
@@ -34,7 +34,7 @@ public:
           #pragma omp for
           for(i=0; i<n; i++)
           {
-             srand((time(NULL)));
+  //           srand((time(NULL)));
               v.push_back(rand()%rango);
           }
         }
@@ -130,4 +130,3 @@ int main()
 	cout<<"Mi producto punto es de " <<A.productoPunto(B)<<endl;
 	return 0;
 }
-
